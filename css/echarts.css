@@ -1,0 +1,39 @@
+html, body {
+  height: 100%; }
+
+.all {
+  display: flex;
+  height: 100%; }
+  .all .anchorBL {
+    display: none; }
+  .all .BMap_cpyCtrl {
+    display: none; }
+  .all div {
+    box-sizing: border-box;
+    border: 0 !important; }
+  .all .col-one {
+    display: flex;
+    flex-direction: column;
+    flex: 25%; }
+    .all .col-one div {
+      flex: 33.33333%; }
+  .all .col-two {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 55%; }
+    .all .col-two #mainM {
+      flex: 60%; }
+    .all .col-two .main-row {
+      flex: 40%;
+      display: flex; }
+      .all .col-two .main-row div {
+        flex: 50%; }
+  .all .col-three {
+    display: flex;
+    flex-direction: column;
+    flex: 25%; }
+    .all .col-three div {
+      flex: 33.33333%; }
+
+/*# sourceMappingURL=echarts.css.map */

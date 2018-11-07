@@ -1,0 +1,47 @@
+@charset "utf-8";
+html,body{
+  height: 100%;
+}
+.all{
+  display: flex;height:100%;
+  .anchorBL{
+    display:none; //去百度地图logo
+  }
+  .BMap_cpyCtrl {
+    display: none;  //去百度地图文字
+  }
+    div{
+    box-sizing: border-box;
+    border:0!important;
+  }
+  .col-one{
+    display: flex;flex-direction: column;
+    flex:25%;
+    div{
+      flex:33.333333333%
+    }
+  }
+  .col-two{
+    display: flex;flex-direction: column;height:100%;
+    flex:55%;
+    #mainM{
+      flex:60%
+    }
+    .main-row{
+      flex:40%;display: flex;
+      div{
+        flex:50%;
+      }
+    }
+  }
+  .col-three{
+    display: flex;flex-direction: column;
+    flex:25%;
+    div{
+      flex:33.333333333%
+    }
+  }
+}
+
+
+

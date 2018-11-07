@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+html{font-size: 62.5%;}
+
+/*--------清间距---------*/
+*{box-sizing:border-box; margin: 0;padding: 0;}
+body,h1,h2,h3,h4,h5,h6,p,span,ul,dl,li,dl,dt,dd,a,img,input,figure,figcaption{margin:0;padding:0}
+ul,dl{list-style:none;}
+input{outline:none;}
+/*--------定义全局样式样式-----------*/
+body{
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #495057;
+    text-align: left;
+    background-color: #f5f7fb;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+body,html{height:100%}
+
+header,footer,nav,main,section,article,aside,figure,figcaption{display:block}
+
+
+/*——------超链接样式--------------*/
+a{text-decoration:none;cursor: pointer;}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width:0.2px;
+  -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+}
+
+

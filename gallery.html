@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Gallery</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel='stylesheet' href='css/base.css'/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="page">
+    <div class="page-main">
+        <header class="header py-4">
+            <div class="container">
+                <div class="d-flex">
+                    <a class="logoBox" href="./index.html">
+                        <img src="img/tabler@1x.png">
+                    </a>
+                    <div class="d-flex ml-auto">
+                        <div class="nav-item d-none d-md-flex">
+                            <a href="#" class="btn btn-sm btn-outline-primary" target="_blank">Source code</a>
+                        </div>
+                        <div class="dropdown d-none d-md-flex lingziBox-hover">
+                            <a href="#" class="nav-link icon change expl">
+                                <i class="iconfont lingzi">&#xe619;</i>
+                                <span class="nav-unread"></span>
+                            </a>
+                            <div class="dropdown-menu  dropdown-menu-rights dropdown-menu-arrow show disnone" x-placement="bottom-end" style="position: absolute;transform: translate3d(-414px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <a href="#" class="dropdown-item d-flex">
+                                    <span class="avatar mr-3 align-self-center" style="background-image: url(img/faces/male/41.jpg)"></span>
+                                    <div>
+                                        <strong>Nathan</strong> pushed new commit: Fix page load performance issue.
+                                        <div class="small text-muted">10 minutes ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item d-flex">
+                                    <span class="avatar mr-3 align-self-center" style="background-image: url(img/faces/female/1.jpg)"></span>
+                                    <div>
+                                        <strong>Alice</strong> started new task: Tabler UI design.
+                                        <div class="small text-muted">1 hour ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item d-flex">
+                                    <span class="avatar mr-3 align-self-center" style="background-image: url(img/faces/female/18.jpg)"></span>
+                                    <div>
+                                        <strong>Rose</strong> deployed new version of NodeJS REST Api V3
+                                        <div class="small text-muted">2 hours ago</div>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item text-center text-muted-dark">Mark all as read</a>
+                            </div>
+                        </div>
+                        <div style="position: relative;top:.2rem">
+                            <a href="#" class="nav-link pr-0 leading-none change expl" data-toggle="dropdown" >
+                                <span class="avatar" style="background-image: url(img/faces/male/29.jpg)"></span>
+                                <span class="ml-2 d-none d-lg-block">
+                                  <span class="text-default">Jane Pearson</span>
+                                  <small class="text-muted d-block mt-1">Administrator</small>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow show disnone" x-placement="bottom-end" style="position: absolute;transform: translate3d(-148px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <a class="dropdown-item" href="#">
+                                    <i class="dropdown-icon iconfont">&#xe627;</i> Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="dropdown-icon iconfont">&#xe601;</i> Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="dropdown-icon iconfont">&#xe607;</i> Inbox
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="dropdown-icon iconfont">&#xe647;</i> Message
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="dropdown-icon iconfont">&#xe689;</i> Need help?
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="dropdown-icon iconfont">&#xe609;</i> Sign out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="header-tooger card-none">
+                        <i class="iconfont">&#xe5e5;</i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="header collapse d-lg-flex p-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 ml-auto pub-col">
+                        <form class="input-icon my-3 my-lg-0">
+                            <input type="search" class="form-control header-search" placeholder="Search…" tabindex="1">
+                            <div class="input-icon-addon">
+                                <i class="iconfont">&#xe637;</i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg order-lg-first pub-col">
+                        <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link LJ"><i class="iconfont">&#xe651;</i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link LJ change" data-toggle="dropdown"><i class="iconfont">&#xe63d;</i> Interface</a>
+                                <div class="dropdown-menu dropdown-menu-arrow show disnone" x-placement="bottom-start" style="position: absolute; transform: translate3d(12px, 55px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                    <a href="./cards.html" class="dropdown-item ">Cards design</a>
+                                    <a href="./charts.html" class="dropdown-item ">Charts</a>
+                                    <a href="./pricing-cards.html" class="dropdown-item ">Pricing cards</a>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="javascript:void(0)" class="nav-link LJ change" data-toggle="dropdown"><i class="iconfont">&#xe6bb;</i> Components</a>
+                                <div class="dropdown-menu dropdown-menu-arrow show disnone" x-placement="bottom-start" style="position: absolute; transform: translate3d(12px, 55px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                    <a href="./maps.html" class="dropdown-item ">Maps</a>
+                                    <a href="./icons.html" class="dropdown-item ">Icons</a>
+                                    <a href="./store.html" class="dropdown-item ">Store</a>
+                                    <a href="./blog.html" class="dropdown-item ">Blog</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link LJ change" data-toggle="dropdown"><i class="iconfont">&#xe6c9;</i> Pages</a>
+                                <div class="dropdown-menu dropdown-menu-arrow show disnone" x-placement="bottom-start" style="position: absolute; transform: translate3d(12px, 55px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                    <a href="./profile.html" class="dropdown-item ">Profile</a>
+                                    <a href="./login.html" class="dropdown-item ">Login</a>
+                                    <a href="./register.html" class="dropdown-item ">Register</a>
+                                    <a href="./forgot-password.html" class="dropdown-item ">Forgot password</a>
+                                    <a href="./400.html" class="dropdown-item ">400 error</a>
+                                    <a href="./401.html" class="dropdown-item ">401 error</a>
+                                    <a href="./403.html" class="dropdown-item ">403 error</a>
+                                    <a href="./404.html" class="dropdown-item ">404 error</a>
+                                    <a href="./500.html" class="dropdown-item ">500 error</a>
+                                    <a href="./503.html" class="dropdown-item ">503 error</a>
+                                    <a href="./email.html" class="dropdown-item ">Email</a>
+                                    <a href="./empty.html" class="dropdown-item ">Empty page</a>
+                                    <a href="./rtl.html" class="dropdown-item ">RTL mode</a>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="./forms.html" class="nav-link LJ"><i class="iconfont">&#xe603;</i> Forms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./gallery.html" class="nav-link active LJ"><i class="iconfont">&#xe5b9;</i> Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./documentation.html" class="nav-link LJ"><i class="iconfont">&#xe665;</i> Documentation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 my-md-5">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="page-title">
+                        Gallery
+                    </h1>
+                    <div class="page-subtitle">1 - 12 of 1713 photos</div>
+                    <div class="page-options d-flex">
+                        <select class="form-control custom-select w-auto">
+                            <option value="asc">Newest</option>
+                            <option value="desc">Oldest</option>
+                        </select>
+                        <div class="input-icon ml-2">
+                            <span class="input-icon-addon">
+                                <i class="iconfont glass">&#xe637;</i>
+                            </span>
+                            <input type="text" class="form-control w-10" placeholder="Search photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cards">
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/anders-jilden-307322-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/female/29.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>Nathan Guerrero</div>
+                                    <small class="d-block text-muted">3 hours ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 2.1w</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 1.2w</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/adrian-infernus-281832-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/male/21.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>Guerrero</div>
+                                    <small class="d-block text-muted">5 hours ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 3.2w</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 1.4w</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/anthony-intraversato-257182-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/female/28.jpg)"></div>
+                                <div  class="now-wrap">
+                                    <div>Nathansa</div>
+                                    <small class="d-block text-muted">2 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted   now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 2.2w</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 1.8w</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/aneta-ivanova-776-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/male/11.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>Natro</div>
+                                    <small class="d-block text-muted">3 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 1.1W</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 1W</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/christian-joudrey-96208-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/female/19.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>Nathan tyhs</div>
+                                    <small class="d-block text-muted">3 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 7689</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 7653</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/davide-cantelli-139887-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/male/10.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>wero</div>
+                                    <small class="d-block text-muted">4 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 6545</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 4782</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/jakob-owens-224352-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/male/24.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>fuerrero</div>
+                                    <small class="d-block text-muted">4 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 6543</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 4532</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/oskar-vertetics-53043-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/male/33.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>Guerrero</div>
+                                    <small class="d-block text-muted">4 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 4532</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 3212</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/priscilla-du-preez-181896-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/male/25.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>Baiguo</div>
+                                    <small class="d-block text-muted">5 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 3211</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 2312</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/ricardo-gomez-angel-262359-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/female/23.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>Nacas</div>
+                                    <small class="d-block text-muted">6 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 2211</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 1654</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/teddy-kelley-109202-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/male/18.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>Guerrero</div>
+                                    <small class="d-block text-muted">6 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 3412</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 2112</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 pub-col">
+                        <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                                <img src="img/photos/wil-stewart-18242-1500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                                <div class="avatar avatar-md mr-3" style="background-image: url(img/faces/male/32.jpg)"></div>
+                                <div class="now-wrap">
+                                    <div>Nathan</div>
+                                    <small class="d-block text-muted">11 days ago</small>
+                                </div>
+                                <div class="ml-auto text-muted now-wrap">
+                                    <a href="javascript:void(0)" class="icon"><i class="iconfont mr-1">&#xe89a;</i> 1721</a>
+                                    <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="iconfont mr-1">&#xe66c;</i> 88</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="pub-col col-lg-8">
+                    <div class="row">
+                        <div class="pub-col col-6 col-md-3">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">First link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second link</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pub-col col-6 col-md-3">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">First link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second link</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pub-col col-6 col-md-3">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">First link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second link</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pub-col col-6 col-md-3">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">First link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub-col mt-4 mt-lg-0 col-lg-4">
+                    Premium and Open Source dashboard template with responsive and high quality UI. For Free!
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="pub-col col-auto ml-lg-auto">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <ul class="list-inline list-inline-dots mb-0">
+                                <li class="list-inline-item"><a href="./docs/index.html">Documentation</a></li>
+                                <li class="list-inline-item"><a href="./faq.html"> · FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-auto">
+                            <a href="" class="btn btn-outline-primary btn-sm">Source code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pub-col col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+                    Copyright © 2018.Company name All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/pub.js"></script>
