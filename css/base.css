@@ -3,7 +3,7 @@
 html{font-size: 62.5%;}
 
 /*--------清间距---------*/
-*{box-sizing:border-box; margin: 0;padding: 0;}
+*{box-sizing:border-box; margin: 0;padding: 0;-webkit-tap-highlight-color: transparent;}
 body,h1,h2,h3,h4,h5,h6,p,span,ul,dl,li,dl,dt,dd,a,img,input,figure,figcaption{margin:0;padding:0}
 ul,dl{list-style:none;}
 input{outline:none;}
@@ -21,6 +21,20 @@ body{
     -ms-user-select: none; /*IE10*/
     -khtml-user-select: none; /*早期浏览器*/
     user-select: none;
+}
+body {
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-font-feature-settings: "liga" 0;
+    font-feature-settings: "liga" 0;
+    height: 100%;
+    overflow-y: scroll;
+    position: relative;
 }
 body,html{height:100%}
 

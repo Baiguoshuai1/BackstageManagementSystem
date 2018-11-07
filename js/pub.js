@@ -33,3 +33,16 @@ $(".card-options-remove").each(function(){
         $(this).parent().parent().parent().parent().toggle();
     })
 })
+//点击空白处
+$('.change').click(function (event) {
+    //取消事件冒泡
+    event.stopPropagation();
+    return false;
+});
+//点击空白处隐藏弹出层，下面为滑动消失效果和淡出消失效果。
+$(document).click(function(event){
+    var _con = $('.dropdown-menu');   // 设置目标区域
+    if(!_con.is(event.target) && _con.has(event.target).length === 0){
+        $('.dropdown-menu').css({display:'none'});          //消失
+    }
+});
